@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_collapse_height">35dp</dimen>
+    <dimen name="bottom_sheet_expand_height">300dp</dimen>
+    <dimen name="placeImageSize">55dp</dimen>
+</resources>

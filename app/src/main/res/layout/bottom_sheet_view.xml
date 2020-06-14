@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:paddingHorizontal="10dp"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/rounded_rect_ic"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/categoryTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/restaurant_ic"
+        android:fontFamily="@font/iran_sans_1"
+        android:gravity="center"
+        android:textSize="16dp"
+        tools:text="رستوران ها"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/foundedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran_sans_1"
+        android:layout_marginTop="5dp"
+        tools:text="4 رستوران پیدا شد:"
+        android:textSize="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/placesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/recycler_place_item"/>
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nearby Places Map</string>
+
+    <string name="foundedStr">%d %s پیدا شد:</string>
+</resources>
